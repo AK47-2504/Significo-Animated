@@ -1,0 +1,86 @@
+:root {
+  --salmon: #fa8072;
+  --Dsalmon: #231513;
+  --salmon2: #ef9d71;
+  --black: #000;
+  --white: #fff;
+  --cyan: #AEDEE0;
+  --Dcyan: #1f2f32;
+  --yellow: #f8ff92;
+}
+
+body {
+  transition: background-color ease-out .5s;
+}
+
+::-webkit-scrollbar {
+  width: 6px; /* Slim scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black; /* Black color */
+  border-radius: 3px; /* Rounded edges */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Transparent track */
+}
+
+.videodiv {
+  clip-path: circle(var(--circle) at 50% 50%);
+}
+
+
+*::selection {
+  background-color: var(--salmon2);
+}
+
+body[theme="black"] .section {
+  background-color: var(--black);
+}
+body[theme="black"] .section {
+  color: var(--white);
+}
+
+body[theme="yellow"] .section {
+  background-color: var(--yellow);
+}
+body[theme="black"] .section {
+  color: var(--white);
+}
+
+body[theme="cyan"] {
+  background-color: var(--cyan);
+}
+body[theme="cyan"] .section {
+  color: var(--Dcyan);
+}
+
+body[theme="salmon"] {
+  background-color: var(--salmon);
+}
+body[theme="salmon"] .section {
+  color: var(--Dsalmon);
+}
+
+body[theme="white"] {
+  background-color: var(--white);
+}
+body[theme="white"] .section {
+  color: var(--black);
+}
+
+.navbar {
+  backdrop-filter: blur(70px);
+  transition: transform 1s ease-in-out;
+  font-family: "Gilroy";
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  padding: 10px;
+  display: inline-block;
+  transition: transform 0.5s ease-in-out;
+}
